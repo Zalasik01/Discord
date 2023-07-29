@@ -4,7 +4,8 @@ Desenvolvi esse bot para discord com linguagem Python. Bot totalmente configurav
 Bot em constante desenvolvimento então sera feito atualizações sempre, hoje o bot funciona para abertura de canal-temporario para atendimento de suporte.
 
 Bot envia uma msg em um canal especifico e manda uma reação junto, quando alguém clicar nessa reação ele abre um chat temporario onde somente a pessoa que clicou e o staff (configuração por ID CARGO)
-conseguem ver o chat, após o atendimento basta digitar !finalizar que o chat é excluido.
+conseguem ver o chat, após o atendimento basta digitar !finalizar que o chat é excluido. Hoje o bot conta com um sistema de Log's onde fica tudo salvo em um bloco de notas para ser analisado a qualquer momento
+adicionado comando !logs para "Fundadores" poderem excluir arquivos de logs.
 
 
 Sera adicionado o sistema de "Nota" para o atendimento, isso sera gravado em um local para depois ser visto por alguem especifico ou cargo especifico. Sera implementado relatorios no bot.
