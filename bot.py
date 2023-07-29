@@ -97,7 +97,7 @@ async def resolver(ctx):
 async def run_bot():
     logging.info("Bot iniciado.")
     try:
-        await bot.start('MTEzNDU3Njc1NjI0Njk5MDg2OQ.GaL9kx.NS1cETkL-Insf24cyXoXoUB9b8p1cJBxHAdhVg')  # Substitua "SEU_TOKEN_AQUI" pelo token real do seu bot
+        await bot.start('SEU_TOKEN_AQUI')  # Substitua "SEU_TOKEN_AQUI" pelo token real do seu bot
     except KeyboardInterrupt:
         logging.info("Bot encerrado por um sinal de teclado (KeyboardInterrupt).")
     finally:
