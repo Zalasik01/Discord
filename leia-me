@@ -1,11 +1,19 @@
-Olá, me chamo Nicolas e sou programador. 
+Esses códigos têm como objetivo criar um sistema de atendimento por tickets em um servidor do Discord.
+Quando um usuário interage com o bot através de um botão ou menu suspenso, ele pode abrir um novo ticket nas categorias "duvidas" ou "suporte".
+Os tickets criados são canais de texto privados onde os usuários podem receber suporte ou tirar dúvidas.
 
-Desenvolvi esse bot para discord com linguagem Python. Bot totalmente configuravel para seu discord basta alterar os "IDs".
-Bot em constante desenvolvimento então sera feito atualizações sempre, hoje o bot funciona para abertura de canal-temporario para atendimento de suporte.
+Resumo das principais funcionalidades:
 
-Bot envia uma msg em um canal especifico e manda uma reação junto, quando alguém clicar nessa reação ele abre um chat temporario onde somente a pessoa que clicou e o staff (configuração por ID CARGO)
-conseguem ver o chat, após o atendimento basta digitar !finalizar que o chat é excluido. Hoje o bot conta com um sistema de Log's onde fica tudo salvo em um bloco de notas para ser analisado a qualquer momento
-adicionado comando !logs para "Fundadores" poderem excluir arquivos de logs.
+1. O bot verifica se a interação é de um servidor (guild) e se é um botão ou menu suspenso.
+2. Caso seja um menu suspenso e o usuário já tenha um ticket aberto, o bot informa que ele já possui um ticket aberto.
+3. Se o usuário escolher a categoria "duvidas" ou "suporte", um novo ticket é criado na categoria especificada.
+4. O canal do ticket é restrito apenas para o usuário que o criou e para o servidor (permissões específicas são configuradas).
+5. O bot permite que membros com o cargo de ID "1134582190177525902" (cargo de staff) finalizem o atendimento clicando em um botão "Finalizar".
+6. Uma vez que o atendimento é finalizado, o usuário pode avaliar o atendimento dando uma nota de 1 a 5.
+7. O bot armazena as avaliações feitas para garantir que o usuário só possa avaliar uma vez por ticket.
+8. Após a avaliação, o bot envia uma mensagem com os detalhes da avaliação para um canal específico de avaliações.
+9. O bot deleta automaticamente o ticket após a avaliação ser concluída.
+10. Bot possui algumas informações presentes em Logs.JS (logs.txt) que é gerado algumas informações
 
-
-Sera adicionado o sistema de "Nota" para o atendimento, isso sera gravado em um local para depois ser visto por alguem especifico ou cargo especifico. Sera implementado relatorios no bot.
+Além disso, é importante notar que o código usa a biblioteca "discord.js" para interagir com a API do Discord.
+O bot também possui um arquivo "config.json" que contém o token de autenticação do bot, e os comandos e eventos são organizados em pastas separadas para facilitar a manutenção do código.
